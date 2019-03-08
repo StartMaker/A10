@@ -1,11 +1,11 @@
 import {Events} from "../../action/event";
 
-const initState = {
-    character: null,
-    login: false
-};
+// const initState = {
+//     character: null,
+//     login: false
+// };
 
-export default function (state, action) {
+export default function (state = {}, action) {
     console.log(action);
     switch (action.todo) {
         case Events.LOGIN:
@@ -15,6 +15,6 @@ export default function (state, action) {
         case Events.REGISTER:
             return;
         default:
-            return initState;
+            return state;
     }
 }

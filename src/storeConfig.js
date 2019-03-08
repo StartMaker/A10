@@ -5,11 +5,17 @@ import {createLogger} from "redux-logger";
 import reducers from './reducers';
 
 const loggerMiddleware = createLogger();
+const preLoadState = {
+    user: {
+        login: false,
+        character: null
+    }
+};
 
-export default function (preloadstate) {
+export default function () {
     return createStore(
         reducers,
-        preloadstate,
+        preLoadState,
         applyMiddleware(thunkMiddleware,loggerMiddleware)
     )
 }

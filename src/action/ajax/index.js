@@ -14,11 +14,8 @@ export const Register = (action,dispatch) => {
 // };
 
 export const Login = action => dispatch =>{
-    console.log(getLoginAction(action));
     dispatch(RequestPost(getLoginAction(action)));
-
-    dispatch(AxiosRequest(getLoginAction(action)));
-    // return AxiosRequest(getLoginAction(action));
+    return dispatch(AxiosRequest(getLoginAction(action)));
 };
 
 

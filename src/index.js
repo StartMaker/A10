@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {Provider} from 'react-redux';
+import {Provider as ReduxProvide} from 'react-redux';
 
 import Root from './root';
 import './App/static/css/default.less';
@@ -11,9 +11,9 @@ const store = storeConfig();
 class App extends React.Component{
     render() {
         return (
-            <Provider store={store}>
-                    <Root/>
-            </Provider>
+            <ReduxProvide store={store}>
+                <Root/>
+            </ReduxProvide>
         );
     }
 }

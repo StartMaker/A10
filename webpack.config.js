@@ -28,7 +28,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test:/\.(js|jsx)?$/,
+                test:/\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: [
                     "babel-loader",
@@ -94,7 +94,16 @@ module.exports = {
                     "postcss-loader",
                     "less-loader"
                 ]
-            }
+            },
+            {
+                test: /\.(ts|tsx)?$/,
+                include: path.resolve(__dirname, 'src'),
+                use: [
+                    {
+                        loader: 'ts-loader'
+                    }
+                ]
+            },
             // {
             //     test: /\.(svg(\?v=\d+\.\d+\.\d+)?)|(png|woff|woff2|ttf|eot)$/,
             //     issuer: {
@@ -133,7 +142,7 @@ module.exports = {
     //     }
     // },
     resolve: {
-        extensions: [".js", ".json", ".jsx"],
+        extensions: [".js", ".json", ".jsx",".ts",".tsx"],
         alias: { "./dist/cpexcel.js": "" }
     },
     plugins: [
