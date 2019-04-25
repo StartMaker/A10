@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 //js压缩插件
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const webpack = require('webpack');
 module.exports = {
@@ -154,7 +153,7 @@ module.exports = {
          * chunks 代码块,vendor 为固定静态资源splitChunks配置,各个模板的入口 对应entry入口模块
          */
         new HtmlWebpackPlugin({
-            template: "./src/index-uploadFIle.html",
+            template: "./src/index-template.html",
             inject: true,
             minify: true,
             favicon: './src/App/static/image/logo.jpg',

@@ -15,12 +15,17 @@ class NotFound extends React.Component{
         const {history} = this.props;
         history.goBack();
     };
+    goLogin = () => {
+        const {history} = this.props;
+        history.push('/login');
+    };
     render() {
         return (
             <div id='notFound'>
                 <h1>404</h1>
                 <h4>Not Found</h4>
                 <a onClick={this.goBack}>Go Back</a>
+                <a onClick={this.goLogin}>Go Back</a>
             </div>
         );
     }

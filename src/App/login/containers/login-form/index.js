@@ -3,12 +3,15 @@ import {Form, Row, Col, Button, Divider, Checkbox, Input, Icon} from 'antd';
 import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 
-import MyInput from './input';
+import MyInput from '../../components/input';
 import {Login} from "../../../../action/ajax";
 
 class LoginForm extends React.Component{
     constructor(props){
         super(props);
+    }
+    shouldComponentUpdate() {
+        return false;
     }
     componentDidMount() {
         console.log(this);
@@ -16,18 +19,18 @@ class LoginForm extends React.Component{
     login = (ev) => {
         ev.preventDefault();
         const {dispatch, history} = this.props;
-        // history.push({pathname:'/homepage'});
-        if(this.username.state.value === ''||this.password.state.value === ''){
-            return ;
-        }
+        history.push({pathname:'/homepage'});
+        // if(this.username.state.value === ''||this.password.state.value === ''){
+        //     return ;
+        // }
         // Login({
         //     userName:  this.username.state.value,
         //     userPassword: this.password.state.value
         // },dispatch);
-        dispatch(Login({
-            userName:  this.username.state.value,
-            userPassword: this.password.state.value
-        }));
+        // dispatch(Login({
+        //     userName:  this.username.state.value,
+        //     userPassword: this.password.state.value
+        // }));
     };
     register = () => {
         this.props.history.push({pathname:'/register'});

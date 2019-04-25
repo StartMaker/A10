@@ -9,6 +9,10 @@ import storeConfig from './storeConfig';
 const store = storeConfig();
 
 class App extends React.Component{
+    componentWillMount(){
+        let root = document.getElementById('root');
+        console.log(root._reactRootContainer);
+    }
     render() {
         return (
             <ReduxProvide store={store}>
@@ -20,7 +24,7 @@ class App extends React.Component{
 
 render(
     <App/>,
-    document.body
+    document.getElementById('root')
 );
 
 export default App;

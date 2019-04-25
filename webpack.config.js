@@ -25,10 +25,20 @@ module.exports = {
         process: false,
         Buffer: false
     },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        hot: true,
+        host: '10.20.0.76',
+        progress: true,
+        inline: true,
+        port: 3000,
+        compress: true,
+        historyApiFallback: true
+    },
     module: {
         rules: [
             {
-                test:/\.(js|jsx)$/,
+                test:/\.js$/,
                 exclude: /node_modules/,
                 use: [
                     "babel-loader",
@@ -160,7 +170,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/index-template.html",
             inject: true,
-            favicon: './src/App/static/image/logo.jpg',
+            // favicon: './src/App/static/image/logo.jpg',
             filename: "index.html",
             hash: true
         }),

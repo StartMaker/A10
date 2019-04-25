@@ -1,10 +1,10 @@
 import React from 'react';
 import {Layout, Row} from "antd";
 
-const {Content} = Layout;
+const {Content: Index} = Layout;
 
-import Column from '../../components/column';
-import {Consumer} from '../../context';
+import Column from '../../column';
+import {Consumer} from '../../../context';
 
 class UploadContent extends React.Component{
     constructor(props){
@@ -12,7 +12,7 @@ class UploadContent extends React.Component{
     }
     render() {
         return (
-            <Content>
+            <Index>
                 <Row type='flex'>
                     <Consumer>
                         {
@@ -23,7 +23,7 @@ class UploadContent extends React.Component{
                         }
                     </Consumer>
                 </Row>
-            </Content>
+            </Index>
         );
     }
 }

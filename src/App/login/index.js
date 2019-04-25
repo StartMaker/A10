@@ -15,6 +15,7 @@ class LoginPage extends React.Component{
     constructor(props){
         super(props);
     }
+
     static defaultProps = {
         copyRight: '三只小猪',
         nav:{
