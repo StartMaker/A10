@@ -28,7 +28,10 @@ const  config = webpackMerge(baseConfig, {
         historyApiFallback: true
     },
     entry: {
-        main: [path.resolve(__dirname, "../src/index.js")]
+        main: [
+          'react-hot-loader/patch',
+          path.resolve(__dirname, "../src/index.js")
+        ]
     },
     devtool: 'source-map',
     module: {
