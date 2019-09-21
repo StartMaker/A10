@@ -1,3 +1,4 @@
-/node_modules
+node_modules
 /.ideagit config --global core.excludesfile ~/.gitignore
-/dist
+dist
+.gitignore
