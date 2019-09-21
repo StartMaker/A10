@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20617cab-71df-4ce5-96e9-62b5b7a09460" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/A10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dll/vendors.dll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dll/vendors.manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.dll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.production.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/common-5df8e342ab6cdd6aea10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/main-5df8e342ab6cdd6aea10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/column/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/createFile/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/logo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/nav-item-pull/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/normal-window/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/small-window/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/home/content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/content/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/data-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/data-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/normalSider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/samllSider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/uploadData/displayFile/display-excel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/uploadData/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/uploadData/uploadFIle/upload-files.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/uploadData/uploadFIle/upload-sql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Home/content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Home/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Upload/content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Upload/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Upload/side.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/context/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/homepage/styles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/login/components/input/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/login/components/nav/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/login/components/smallNav/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/login/containers/login-form/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/login/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/login/styles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/register/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/register/input/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/register/styles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/static/css/default.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/static/image/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/static/image/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/static/image/logo_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/static/image/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/static/image/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/static/image/register.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/ajax/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/async/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/event/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/sync/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/url/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/error/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notFound/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notFound/styles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/readFile/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/context.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index-template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index_es6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/example/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/homepage/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/posts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/user/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/root.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storeConfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.production.config.js" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/webpack.production.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/webpack.base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-772" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/webpack.development.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="109" column="11" selection-start-line="107" selection-start-column="7" selection-end-line="109" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/webpack.dll.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/webpack.development.js" />
+        <option value="$PROJECT_DIR$/config/webpack.production.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1932" />
+    <option name="height" value="1045" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="A10" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="A10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A10" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\lenovo\Desktop\A10\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20617cab-71df-4ce5-96e9-62b5b7a09460" name="Default Changelist" comment="" />
+      <created>1569047149365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569047149365</updated>
+      <workItem from="1569047153519" duration="2185000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2185000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3686584" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.dll.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-772" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="109" column="11" selection-start-line="107" selection-start-column="7" selection-end-line="109" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
