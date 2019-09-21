@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20617cab-71df-4ce5-96e9-62b5b7a09460" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/A10.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
@@ -14,88 +13,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/dll/vendors.dll.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/config/dll/vendors.manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.development.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.dll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.production.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/common-5df8e342ab6cdd6aea10.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/main-5df8e342ab6cdd6aea10.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/column/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/createFile/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/logo/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/nav-item-pull/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/normal-window/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/header/small-window/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/home/content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/content/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/data-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/data-search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/normalSider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/upload/sider/samllSider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/uploadData/displayFile/display-excel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/uploadData/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/uploadData/uploadFIle/upload-files.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/components/uploadData/uploadFIle/upload-sql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Home/content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Home/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Upload/content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Upload/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/containers/Upload/side.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/context/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/homepage/styles.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/login/components/input/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/login/components/nav/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/login/components/smallNav/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/login/containers/login-form/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/login/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/login/styles.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/register/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/register/input/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/register/styles.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/static/css/default.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/static/image/login.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/static/image/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/static/image/logo_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/static/image/menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/static/image/menu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/static/image/register.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/ajax/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/async/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/event/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/sync/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/url/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/error/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notFound/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notFound/styles.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/readFile/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/context.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index-template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index_es6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/example/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/homepage/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/posts/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/user/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/root.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storeConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.production.config.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -120,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            <state relative-caret-position="27">
+              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -203,7 +120,7 @@
             <path>
               <item name="A10" type="b2602c69:ProjectViewProjectNode" />
               <item name="A10" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,12 +163,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569047149365</updated>
-      <workItem from="1569047153519" duration="2185000" />
+      <workItem from="1569047153519" duration="2469000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1569049616376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569049616376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2185000" />
+    <option name="totallyTimeSpent" value="2469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
@@ -277,6 +202,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -310,8 +239,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        <state relative-caret-position="27">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
