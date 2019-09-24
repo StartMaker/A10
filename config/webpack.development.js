@@ -25,7 +25,12 @@ const  config = webpackMerge(baseConfig, {
         inline: true,
         port: 3000,
         compress: true,
-        historyApiFallback: true
+        historyApiFallback: true,
+        proxy: {
+            '/api/*': {
+                target: 'http://localhost:8080'
+            }
+        }
     },
     entry: {
         main: [
