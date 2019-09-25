@@ -1,8 +1,6 @@
-import {render} from 'react-dom';
 import React from 'react';
-import App from './app';
+import ReactDOM from 'react-dom';
+import './styles/index.css';
+import RouteMap from './router/RouteMap';
 
-render(
-  <App/>,
-  document.getElementById('root')
-);
+ReactDOM.render(<RouteMap/>, document.getElementById('root'));

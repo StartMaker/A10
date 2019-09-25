@@ -101,7 +101,7 @@ const  config = webpackMerge(baseConfig, {
             },
         }),
         new webpack.DllReferencePlugin({
-            manifest: require('./dll/vendors.manifest.json')
+            manifest: require(path.join(__dirname, './dll/vendors.manifest.json'))
         }),
         new AddAssetHtmlPlugin([
             {

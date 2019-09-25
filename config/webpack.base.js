@@ -35,6 +35,7 @@ module.exports = {
             id: 'babel',
             threadPool: HappyPackPool,
             // cache: true,
+            // threads: 5,
             loaders: ['babel-loader','astroturf/loader']
         }),
         new ForkTsCheckerWebpackPlugin()

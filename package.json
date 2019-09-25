@@ -92,7 +92,11 @@
     "redux": "^4.0.1",
     "redux-immutable": "^4.0.0",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "bootstrap": "^4.2.1",
+    "prop-types": "latest",
+    "jquery": "^3.3.1",
+    "mockjs": "^1.0.1-beta3"
   },
   "description": "我的博客",
   "repository": {
