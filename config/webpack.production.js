@@ -5,6 +5,7 @@ const webpackMerge = require('webpack-merge');
 const LessPluginFunctions = require('less-plugin-functions');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const baseConfig = require('./webpack.base');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = webpackMerge(baseConfig, {
   mode: 'production',
@@ -107,6 +108,16 @@ const config = webpackMerge(baseConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     new CleanWebpackPlugin(['dist'],{
       root: path.resolve(__dirname, '..')
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      inject: true,
+      minify: true,
+      // favicon: './src/App/static/image/logo.jpg',
+      filename: "./index.html",
+      hash: true,
+      contentHash: true,
+      cache: true
     }),
     new webpack.DefinePlugin({
       'process.env': {
