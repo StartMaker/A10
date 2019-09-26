@@ -90,9 +90,23 @@ class Home extends React.Component {
                             </ul>
                             <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/84e25a9a5f69e4eb88f1df608118fa67.jpg?thumb=1&w=1226&h=120&f=webp&q=90"/>
                         </div>
-                        <div className="main-section">
-                            <div className="section-sider"></div>
-                            <ul></ul>
+                        <div className="main-section main-section-margin">
+                            <div className="section-sider">
+                                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/79ed6663b57e30554a5d1f0653c68b78.jpg?thumb=1&w=234&h=614&f=webp&q=90"/>
+                            </div>
+                            <div className="main-section-container-right">
+                                <ul className="main-section-container">
+                                    <li className="main-section-container-item"></li>
+                                    <li className="main-section-container-item"></li>
+                                    <li className="main-section-container-item"></li>
+                                    <li className="main-section-container-item"></li>
+                                    <li className="main-section-container-item"></li>
+                                    <li className="main-section-container-item"></li>
+                                    <li className="main-section-container-item"></li>
+                                    <li className="main-section-container-item"></li>
+                                </ul>
+                            </div>
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e64bcac4e4b7c2ceb94f277bbc57ad45.jpg?thumb=1&w=1226&h=120&f=webp&q=90"/>
                         </div>
                     </div>
                 </main>

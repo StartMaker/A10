@@ -79,6 +79,7 @@
         width: 1226px;
         margin-left: auto;
         margin-right: auto;
+        overflow: hidden;
 
         .main-container-title {
             line-height: 3.0;
@@ -105,6 +106,32 @@
                 }
             }
         }
+        .main-section-margin {
+            margin-top: 20px;
+            .section-sider {
+                width: 20%;
+                float: left;
+                height: 614px;
+            }
+            .main-section-container-right {
+                width: 80%;
+                float: left;
+                height: 614px;
+                margin-bottom: 30px;
 
+                .main-section-container {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    .main-section-container-item {
+                        width: 23%;
+                        height: 300px;
+                        background-color: #ffffff;
+                        margin-bottom: 7px;
+                    }
+                }
+            }
+        }
     }
 }
