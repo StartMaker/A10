@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Index from '../containers/Index';
+import Home from '../containers/home/index';
 import Category from '../containers/Category';
+import {hot} from 'react-hot-loader';
 
 import Item from '../containers/Item';
 import Login from '../containers/Login';
@@ -17,7 +18,7 @@ class RouteMap extends Component {
       <BrowserRouter>
         <div>
           <Switch>
-            <Route exact path="/" component={Index}/>
+            <Route exact path="/home" component={Home}/>
             <Route path="/form/:type/:id1/:id2?" component={Category}/>
             {/*<Route path="/form/:type/:catId1/:catId2" component={Category}/>*/}
             <Route path="/item/:itemId" component={Item}/>
@@ -35,4 +36,4 @@ class RouteMap extends Component {
   }
 }
 
-export default RouteMap;
+export default hot(module)(RouteMap);

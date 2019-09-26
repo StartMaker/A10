@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import '../styles/login.css';
-import {fetchToken} from '../action/LoginAction';
+// import {fetchToken} from '../action/LoginAction';
+import axios from '../config/axios';
+import {withRouter} from 'react-router-dom';
 
 class Login extends Component {
   constructor(props) {
@@ -18,16 +20,17 @@ class Login extends Component {
     });
   };
 
-  async handleSubmit(e) {
-    e.preventDefault();
-    const flag = await fetchToken(this.state);
-    if (flag) {
-      window.location.href = '/';
-    } else {
-      alert('登录失败,请重试');
-    }
-  }
-
+  handleSubmit = (e) => {
+    console.log(this.state);
+    const {state} = this;
+    axios.GET('/api/login1',state);
+    // const flag = await fetchToken(this.state);
+    // if (flag) {
+    //   window.location.href = '/';
+    // } else {
+    //   alert('登录失败,请重试');
+    // }
+  };
   render() {
     return (
       <div className='wrapper'>
@@ -36,15 +39,15 @@ class Login extends Component {
         </div>
 
         <div className="contain">
-          <a href='/' className="banner" id="banner"> </a>
+          <a className="banner" id="banner"> </a>
           <div className="login">
             <div className="login-mode" id="login-mode">
-              <a href='/' id="account-login" className="color">
+              <a id="account-login" className="color">
                 账号登录
               </a>
               <span className="line">
               </span>
-              <a href='/' id="qr-login">
+              <a id="qr-login">
                 扫码登录
               </a>
             </div>
@@ -67,7 +70,7 @@ class Login extends Component {
                     <span className="error-con">密码不正确</span>
                   </div>
                 </div>
-                <button onClick={this.handleSubmit.bind(this)} className="login-btn">登录</button>
+                <button type="button" onClick={this.handleSubmit} className="login-btn">登录</button>
                 <div className="others">
                   <span className="ChangeLoginType">手机短信登录/注册</span>
                   <div className="RegisterAndForget">
@@ -122,4 +125,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);

@@ -28,7 +28,7 @@ const  config = webpackMerge(baseConfig, {
         historyApiFallback: true,
         proxy: {
             '/api/*': {
-                target: 'http://localhost:8080'
+                target: 'http://server.natappfree.cc:36858'
             }
         }
     },
@@ -78,8 +78,7 @@ const  config = webpackMerge(baseConfig, {
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 8192,
-                            mimetype:'images/png',
+                            limit: 9999999,
                             name: 'images/[name].[hash:7].[ext]'
                         }
                     }
