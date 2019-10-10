@@ -25,9 +25,11 @@ module.exports = {
     resolve: {
         extensions: [".js", ".json", ".jsx",".ts",".tsx"],
         alias: {
-            '&static': path.resolve(__dirname, '../client/src/static'),
-            '&components': path.resolve(__dirname, '../client/src/components'),
-            '&store': path.resolve(__dirname, '../client/store')
+            '&static': path.resolve(__dirname, '../src/static'),
+            '&icons': path.resolve(__dirname, '../src/static/icons'),
+            '&images': path.resolve(__dirname, '../src/static/images'),
+            '&components': path.resolve(__dirname, '../src/components'),
+            '&store': path.resolve(__dirname, '../src/store')
         }
     },
     plugins: [

@@ -1,0 +1,49 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+#login-page {
+    text-align: center;
+    padding-top: px2rem(90);
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 2000px;
+
+    .login-theme {
+        width: px2rem(360);
+        margin-bottom: px2rem(45);
+    }
+    .form {
+        height: 400px;
+        .form-item {
+            height: px2rem(75);
+            border-bottom: 1px solid gray;
+            text-align: left;
+            font-size: px2rem(38);
+            margin-bottom: px2rem(30);
+
+            .form-item-label {
+                width: 4em;
+                display: inline-block;
+                margin-right: 0.5em;
+                vertical-align: middle;
+            }
+            .form-item-input {
+                width: 65%;
+                vertical-align: middle;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        .ant-btn {
+            font-size: px2rem(36);
+            line-height: 1.5;
+            padding-top: px2rem(18);
+            padding-bottom: px2rem(18);
+            height: auto;
+            margin-bottom: 20px;
+            margin-top: px2rem(80);
+        }
+    }
+}

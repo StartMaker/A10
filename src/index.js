@@ -1,7 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.css';
-import './styles.less';
-import RouteMap from './router/RouteMap';
+import React, {Component} from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
+import RouterMap from './pages/router';
+import {render} from 'react-dom';
+import 'hotcss';
+import '&static/styles/reset.less';
+import '&static/styles/styles.less';
 
-ReactDOM.render(<RouteMap/>, document.getElementById('root'));
+class App extends Component{
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <Router>
+                <RouterMap/>
+            </Router>
+        )
+    }
+}
+
+render(
+    <App/>,
+    document.getElementById('root')
+);

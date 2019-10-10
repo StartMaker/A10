@@ -20,7 +20,7 @@ const  config = webpackMerge(baseConfig, {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         hot: true,
-        host: '0.0.0.0',
+        host: '10.20.0.78',
         progress: true,
         inline: true,
         port: 3000,
@@ -100,16 +100,11 @@ const  config = webpackMerge(baseConfig, {
             },
         }),
         new webpack.DllReferencePlugin({
-            manifest: require(path.join(__dirname, './dll/vendors.manifest.json'))
+            manifest: require(path.join(__dirname, '/dll/vendors.manifest.json'))
         }),
         new AddAssetHtmlPlugin([
             {
-                // 要添加到编译中的文件的绝对路径，以及生成的HTML文件。支持 globby 字符串
-                filepath: require.resolve('./dll/vendors.dll'),
-                // 文件输出目录
-                outputPath: './dist',
-                // 脚本或链接标记的公共路径
-                publicPath: './dist'
+                filepath: require.resolve(path.join(__dirname, '/dll/vendors.dll'))
             }
         ]),
         new CleanWebpackPlugin(['dist'],{

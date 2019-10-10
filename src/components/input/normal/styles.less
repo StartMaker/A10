@@ -1,0 +1,27 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.form-item-wrapper {
+    width: px2rem(600);
+    height: px2rem(100);
+    background-color: rgba(242,243,246,0.7);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: px2rem(25);
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 1.9rem;
+    font-size: 0;
+
+    .form-input {
+        border-radius: 0;
+        border: none;
+        outline: none;
+        width: px2rem(350);
+        font-weight: 500;
+        background-color: transparent;
+        font-size: px2rem(40);
+        line-height: px2rem(90);
+        text-align: center;
+    }
+}
