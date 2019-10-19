@@ -20,15 +20,17 @@ const  config = webpackMerge(baseConfig, {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         hot: true,
-        host: '10.20.0.78',
-        progress: true,
-        inline: true,
+        host: '192.168.43.136',
+        // progress: true,
+        // inline: true,
         port: 3000,
         compress: true,
         historyApiFallback: true,
         proxy: {
             '/api/*': {
-                target: 'http://server.natappfree.cc:36858'
+                target: 'http://192.168.43.147:8083',
+                // target: 'http://localhost:8080',
+                pathRewrite: {'^/api' : ''}
             }
         }
     },

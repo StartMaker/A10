@@ -1,0 +1,33 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.dishesCategory-title {
+    font-size: px2rem(40);
+    padding-left: 3.5%;
+
+    .anticon {
+        float: right;
+        margin-right: 3%;
+    }
+}
+.dishesCategory-list {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.dishesCategory-item {
+    font-size: px2rem(25);
+
+    .dishesCategory-item-content {
+        .am-list-content {
+            padding-top: px2rem(15);
+            padding-bottom: px2rem(15);
+            font-size: px2rem(34);
+        }
+        .dishesCategory-createTime {
+            font-size: px2rem(25);
+            float: right;
+            width: px2rem(135);
+        }
+    }
+}
+

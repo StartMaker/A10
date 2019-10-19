@@ -1,0 +1,41 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.dishesCategory-modal {
+    width: auto;
+    height: auto;
+    top: px2rem(-100);
+
+    .am-modal-content {
+        padding: px2rem(0) px2rem(10);
+        border-radius: px2rem(30);
+
+        .am-modal-title {
+            font-size: px2rem(40);
+            margin-top: px2rem(40);
+        }
+        .am-modal-body {
+            margin-top: px2rem(30);
+            padding-left: px2rem(40);
+            padding-right: px2rem(40);
+
+            .modal-input {
+                width: px2rem(466);
+                height: px2rem(68);
+                border: 1px solid #888;
+                margin-bottom: px2rem(40);
+                border-radius: px2rem(10);
+                outline: none;
+                font-size: px2rem(30);
+                text-indent: px2rem(10);
+            }
+        }
+        .am-modal-button {
+            font-size: px2rem(34);
+            width: auto;
+            height: auto;
+            padding: px2rem(10);
+            line-height: px2rem(80);
+        }
+    }
+}

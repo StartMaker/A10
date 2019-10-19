@@ -1,18 +1,34 @@
 import React from 'react';
 import SeoContainer from '&components/seo-container';
 import Footer from '&components/footer';
-import {Route, Switch, withRouter} from 'react-router-dom';
+import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 import Cargo from './cargo';
 import Dishes from './dishes';
+import Setting from '../setting';
+import './styles.less';
 
-class Index extends React.Component {
+class Home extends React.Component {
     constructor(props) {
         super(props);
+        const {match} = this.props;
+        this.navItems = [
+            {
+                label: '菜品',
+                url: `${match.url}/dishes`,
+                icon: 'icon-food'
+            },
+            {
+                label: '进货',
+                url: `${match.url}/cargo`,
+                icon: 'icon-cargo'
+            },
+            {
+                label: '设置',
+                url: `${match.url}/setting/root`,
+                icon: 'icon-setting'
+            }
+        ];
     }
-    // componentDidMount() {
-    //     const {history, match} = this.props;
-    //     history.push(match.url + '/pp')
-    // }
 
     render() {
         const {match} = this.props;
@@ -21,11 +37,13 @@ class Index extends React.Component {
                 <Switch>
                     <Route exact path={`${match.url}/dishes`} component={Dishes}/>
                     <Route path={`${match.url}/cargo`} component={Cargo}/>
+                    <Route path={`${match.url}/setting`} component={Setting}/>
+                    <Redirect from="/admin/home" to={`${match.url}/dishes`}/>
                 </Switch>
-                <Footer/>
+                <Footer navItems={this.navItems}/>
             </SeoContainer>
         )
     }
 }
 
-export default withRouter(Index);
+export default withRouter(Home);

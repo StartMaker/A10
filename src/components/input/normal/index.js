@@ -1,19 +1,25 @@
 import React from 'react';
-import './styles.less';
 
-class LoginInput extends React.Component {
+class Input extends React.Component {
     constructor(props) {
         super(props);
     }
+    onChange = (ev) => {
+        const {onChange} = this.props;
+        onChange(ev.target.value);
+    };
 
     render() {
-        const {placeholder, type} = this.props;
+        const {placeholder, type, value, className} = this.props;
         return (
-            <div className="form-item-wrapper">
-                <input className="form-input" placeholder={placeholder} type={type ? type : 'text'}/>
-            </div>
+            <input
+                className={className}
+                value={value}
+                type={type}
+                placeholder={placeholder}
+                onChange={this.onChange}/>
         )
     }
 }
 
-export default LoginInput;
+export default Input;

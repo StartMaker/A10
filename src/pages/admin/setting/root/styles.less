@@ -1,0 +1,55 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.setting-nav {
+    padding-left: 5%;
+    padding-top: px2rem(25);
+    padding-bottom: px2rem(25);
+    line-height: 1;
+    font-size: 0;
+    margin-top: px2rem(30);
+    margin-bottom: px2rem(20);
+
+    .anticon {
+        margin-right: px2rem(15);
+        vertical-align: middle;
+        font-size: px2rem(55);
+    }
+    .setting-title {
+        vertical-align: middle;
+        font-size: px2rem(55);
+    }
+}
+.setting-content {
+    height: 100px;
+
+    &:before {
+        content: '';
+        height: px2rem(50);
+        background-color: rgb(245,246,249);
+        display: block;
+    }
+    .setting-container {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: px2rem(40);
+
+        .setting-item {
+            font-size: px2rem(34);
+            line-height: 1;
+            display: block;
+            color: #000;
+            padding-top: px2rem(15);
+            padding-bottom: px2rem(15);
+            margin-bottom: px2rem(10);
+
+            &:hover {
+                text-decoration: none;
+            }
+            .anticon {
+                margin-top: px2rem(2);
+                float: right;
+            }
+        }
+    }
+}

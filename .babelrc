@@ -23,7 +23,7 @@
       "loose": true
     }],
     "react-hot-loader/babel",
-    ["import", {"libraryName": "antd", "style": "css" }],
+    ["import", { "libraryName": "antd-mobile", "style": "css" }],
     "@babel/plugin-syntax-dynamic-import"
   ]
 }

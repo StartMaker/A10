@@ -1,0 +1,50 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.nav-search-wrapper {
+    .nav-search-btn {
+        height: px2rem(74);
+        border-radius: px2rem(37);
+        background-color: rgb(245,246,249);
+        margin-top: px2rem(25);
+        color: gray;
+        width: 100%;
+        font-size: 0;
+        box-sizing: border-box;
+        text-align: center;
+        display: inline-block;
+
+        .anticon {
+            font-size: px2rem(40);
+            margin-right: 3px;
+        }
+        .label {
+            font-size: px2rem(34);
+            line-height: px2rem(74);
+        }
+    }
+    .nav-search {
+        text-align: left;
+        padding-left: px2rem(15);
+        width: calc(100% - px2rem(115));
+
+        .search-input {
+            width: 80%;
+            height: px2rem(74);
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: px2rem(34);
+            margin-left: px2rem(15);
+            //width: 80%;
+            padding: 0;
+            line-height: 1.4;
+        }
+    }
+    .cancel-search {
+        color: rgb(80,170,247);
+        font-size: px2rem(34);
+        margin-left: 0.5em;
+        font-weight: 500;
+    }
+}

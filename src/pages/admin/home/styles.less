@@ -1,0 +1,80 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.nav {
+    &:after {
+        content: '';
+        height: px2rem(20);
+        background-color: rgb(245,246,249);
+        display: block;
+    }
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .create {
+            font-size: px2rem(34);
+            line-height: 1.4;
+            position: relative;
+            margin-top: px2rem(60);
+            margin-bottom: px2rem(40);
+            display: block;
+            color: #000;
+
+            &:visited, &:hover, &:link {
+                text-decoration: none;
+            }
+            .anticon {
+                vertical-align: middle;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: gray;
+            }
+        }
+    }
+}
+.content {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: px2rem(30);
+    overflow: scroll;
+    height: calc(100% - px2rem(270));
+    padding-bottom: px2rem(30);
+
+    .am-swipe {
+        font-size: px2rem(25)
+    }
+    .card {
+        line-height: 1.5;
+        font-size: px2rem(34);
+        //outline: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        padding: px2rem(10);
+
+        .anticon {
+            margin-right: px2rem(15);
+        }
+    }
+    .cargo-items {
+        padding-top: px2rem(20);
+        padding-bottom: px2rem(20);
+        font-size: px2rem(34);
+        line-height: 1;
+
+        .cargo-items-label {
+            vertical-align: middle;
+        }
+        .cargoes-item-price {
+            float: right;
+            margin-top: px2rem(6);
+            margin-right: px2rem(10);
+        }
+        .anticon {
+            margin-right: px2rem(10);
+            vertical-align: middle;
+        }
+    }
+}

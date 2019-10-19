@@ -1,0 +1,38 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.dropdown {
+    line-height: 1;
+    padding-top: px2rem(10);
+    padding-bottom: px2rem(10);
+    font-size: 0;
+    margin-bottom: px2rem(20);
+    &~.dropdown {
+        margin-top: px2rem(35);
+    }
+
+    .anticon {
+        color: rgb(176,179,190);
+        font-size: px2rem(25);
+        padding-top: px2rem(4);
+        width: px2rem(34);
+        height: px2rem(34);
+        vertical-align: middle;
+        transition: 0.15s;
+    }
+    .dropdown-label {
+        vertical-align: middle;
+        margin-left: px2rem(5);
+        font-size: px2rem(34);
+    }
+    .dropdown-subTitle {
+        float: right;
+        font-size: px2rem(25);
+    }
+}
+
+.dropdown-active {
+    .anticon {
+        transform: rotateZ(90deg);
+    }
+}

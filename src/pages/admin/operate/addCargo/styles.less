@@ -1,0 +1,46 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.add-title{
+    font-size: px2rem(40);
+    padding-left: 3%;
+    margin-bottom: px2rem(50);
+
+    .anticon {
+        float: right;
+        margin-right: 3%;
+    }
+}
+.add-form {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: px2rem(24);
+
+
+    .am-list {
+        margin-bottom: px2rem(25);
+    }
+    .am-input-item {
+        height: px2rem(80);
+    }
+    .am-list-item {
+        .am-input-label {
+            font-size: px2rem(34);
+            width: px2rem(300);
+
+            .am-input-cargo {
+                width: px2rem(250);
+                border: none;
+                outline: none;
+            }
+        }
+        select {
+            font-size: px2rem(34);
+        }
+        .am-input-control {
+            input {
+                font-size: px2rem(34);
+            }
+        }
+    }
+}

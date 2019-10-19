@@ -1,0 +1,65 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.admin-create {
+    height: 100%;
+
+    .admin-create-nav {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: px2rem(35);
+        padding-bottom: px2rem(20);
+        padding-top: px2rem(20);
+
+        .admin-create-nav-label {
+            font-size: px2rem(35);
+            vertical-align: middle;
+        }
+        .anticon {
+            vertical-align: middle;
+            margin-right: px2rem(15);
+        }
+    }
+    .operate-title {
+        background-color: rgb(245,246,249);
+
+        .operate-label {
+            padding-left: 5%;
+            font-size: px2rem(30);
+            padding-top: px2rem(30);
+            padding-bottom: px2rem(20);
+            color: gray;
+            margin-bottom: 0;
+        }
+
+    }
+    .operate-container {
+        position: relative;
+        height: calc(100% - px2rem(185));
+
+        .am-drawer {
+            .am-drawer-content {
+                padding-top: px2rem(40);
+            }
+            .am-drawer-sidebar {
+                background-color: #ffffff;
+                width: 100%;
+                padding-left: 1%;
+                padding-right: 1%;
+                padding-top: px2rem(40);
+            }
+        }
+    }
+}
+.operate-item {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .am-list-line {
+        .am-list-brief {
+            font-size: px2rem(34);
+            color: #000;
+        }
+    }
+}

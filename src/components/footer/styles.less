@@ -1,12 +1,30 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
 .footer {
     position: fixed;
     bottom: 0;
     display: flex;
     width: 100%;
+    background-color: rgb(253,253,253);
 
     .footer-item {
         flex-grow: 1;
         flex-shrink: 1;
         text-align: center;
+        color: gray;
+
+        &:hover {
+            text-decoration: none;
+        }
+        .icon {
+            font-size: px2rem(45);
+        }
+        .label {
+            font-size: px2rem(30);
+        }
+    }
+    .exact {
+        color: #007bff;
     }
 }

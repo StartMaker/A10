@@ -27,6 +27,7 @@ module.exports = {
         alias: {
             '&static': path.resolve(__dirname, '../src/static'),
             '&icons': path.resolve(__dirname, '../src/static/icons'),
+            '&helpers': path.resolve(__dirname, '../src/helpers'),
             '&images': path.resolve(__dirname, '../src/static/images'),
             '&components': path.resolve(__dirname, '../src/components'),
             '&store': path.resolve(__dirname, '../src/store')

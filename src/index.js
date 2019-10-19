@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Suspense} from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 import RouterMap from './pages/router';
 import {render} from 'react-dom';
@@ -12,9 +12,12 @@ class App extends Component{
     }
     render() {
         return (
-            <Router>
-                <RouterMap/>
-            </Router>
+            <Suspense fallback={<div>22</div>}>
+                <Router>
+                    <RouterMap/>
+                </Router>
+            </Suspense>
+
         )
     }
 }

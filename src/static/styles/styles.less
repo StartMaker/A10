@@ -1,6 +1,23 @@
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ffffff;
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+* {
+    touch-action: none;
+    user-select: none;
 }
+html,body,#root {
+    height: 100%;
+}
+#root {
+    overflow: hidden;
+    background-color: #fff;
+}
+.am-popover {
+    .am-popover-item {
+        font-size: px2rem(34);
+        .am-popover-item-container {
+            height: auto;
+        }
+    }
+}
+

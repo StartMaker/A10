@@ -1,0 +1,49 @@
+@import '~hotcss/src/px2rem.less';
+@designWidth: 750;
+
+.user-list-nav {
+    font-size: px2rem(34);
+    padding-top: px2rem(20);
+    padding-bottom: px2rem(20);
+
+    .anticon {
+        vertical-align: middle;
+        margin-left: 5%;
+        margin-right: 5px;
+    }
+    .admin-create-nav-label {
+        vertical-align: middle;
+    }
+    .user-list-nav-add {
+        float: right;
+        margin-right: 5%;
+    }
+}
+.user-list-content {
+    &:before {
+        content: '';
+        display: block;
+        height: px2rem(20);
+        background-color: rgb(245,246,249);
+    }
+    .user-list-items {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: px2rem(30);
+
+        .user-card {
+            font-size: px2rem(34);
+            padding-top: px2rem(10);
+            padding-bottom: px2rem(10);
+            border-bottom: 1px dashed lightgray;
+
+            .anticon {
+                vertical-align: middle;
+                margin-right: px2rem(10);
+            }
+            .user-card-label {
+                vertical-align: middle;
+            }
+        }
+    }
+}
