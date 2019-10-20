@@ -19,7 +19,6 @@ class ListDropdown extends React.Component {
     render() {
         const {active} = this.state;
         const {title, subTitle} = this.props;
-        console.log(this.props);
         return (
             <Fragment>
                 <div
