@@ -10,9 +10,10 @@ class Select extends React.Component {
     };
 
     render() {
-        const {value, children, placeholder} = this.props;
+        const {value, children, placeholder, className} = this.props;
         return (
             <select
+                className={className ? className : ''}
                 placeholder={placeholder}
                 value={value}
                 onChange={this.onChange}>

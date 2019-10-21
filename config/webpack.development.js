@@ -20,7 +20,7 @@ const  config = webpackMerge(baseConfig, {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         hot: true,
-        host: '172.20.10.2',
+        host: '192.168.8.104',
         // progress: true,
         // inline: true,
         port: 3000,
@@ -28,7 +28,7 @@ const  config = webpackMerge(baseConfig, {
         historyApiFallback: true,
         proxy: {
             '/api/*': {
-                target: 'http://192.168.43.147:8083',
+                target: 'http://192.168.8.106:8083',
                 // target: 'http://localhost:8080',
                 pathRewrite: {'^/api' : ''}
             }

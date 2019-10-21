@@ -29,7 +29,11 @@ class FoodMenu extends React.Component {
             <SeoContainer title="颐嘉餐厅-菜谱">
                 <nav className="nav-container">
                     <span className="nav-title">菜谱</span>
-                    <Icon type="icon-add" onClick={drawerMethods.changeStatus}/>
+                    {
+                        !drawer.open && (
+                            <Icon type="icon-add" onClick={drawerMethods.changeStatus}/>
+                        )
+                    }
                 </nav>
                 <main className="food-menu-content">
                     <Drawer

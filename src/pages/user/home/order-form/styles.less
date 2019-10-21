@@ -13,14 +13,18 @@
     color: #fff;
     margin-bottom: px2rem(40);
 
-    .anticon {
+    .nav-left {
+        position: absolute;
+        left: 5%;
+    }
+    .nav-right {
         transform: translateY(-50%);
         top: 50%;
         position: absolute;
         right: 5%;
     }
 }
-.food-menu-content {
+.order-menu-content {
     overflow-y: scroll;
     height: calc(100% - px2rem(250));
     position: relative;
@@ -34,8 +38,9 @@
         font-size: px2rem(34);
 
         .btn-group {
-            float: right;
-            font-size: px2rem(25);
+            font-size: px2rem(34);
+            margin-bottom: px2rem(60);
+            margin-top: px2rem(40);
 
             .submit {
                 color: #007bff;
@@ -49,71 +54,86 @@
             margin-top: px2rem(40);
             line-height: 1;
 
-            .am-checkbox-wrapper {
-                margin-bottom: 0;
-                vertical-align: middle;
-            }
-            .am-checkbox {
-                width: px2rem(34);
-                height: px2rem(34);
-                margin-right: px2rem(15);
-                display: block;
-
-                .am-checkbox-inner {
-                    width: 100%;
-                    height: 100%;
-
-                    &:after {
-                        width: px2rem(10);
-                        height: px2rem(10);
-                        top: px2rem(10);
-                        right: px2rem(12);
-                    }
-                }
-            }
-            .checkbox-label {
-                vertical-align: middle;
+            .sider-middle-title {
+                font-size: px2rem(40);
+                margin-bottom: px2rem(40);
             }
         }
     }
 }
-.food-menu-item {
-    font-size: px2rem(34);
-    padding-right: 5%;
-    padding-left: 5%;
 
-    .food-menu-time {
-        font-size: px2rem(40);
-        font-weight: bold;
-        border-bottom: 1px dashed lightgray;
-        margin-bottom: px2rem(25);
-    }
-    .food-menu-title {
-        .food-menu-title-label {
-            vertical-align: middle;
-        }
+.order-form {
+    margin-bottom: px2rem(30);
+
+    .order-form-title {
+        margin-bottom: px2rem(30);
         .anticon {
-            vertical-align: middle;
-            margin-right: px2rem(10);
+            margin-right: px2rem(15);
         }
     }
-    .food-menu-dropdown {
-        padding-left: px2rem(10);
-        margin-top: px2rem(10);
-        font-size: px2rem(30);
-    }
-    .food-menu-close {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-    .food-menu-more {
-        color: #007bff;
+    .order-form-item {
+        margin-bottom: px2rem(10);
         font-size: px2rem(25);
-        margin-left: px2rem(10);
 
-        &:hover {
-            text-decoration: none;
+        .order-form-label {
+            display: inline-block;
+            width: 4em;
+            text-align: center;
+        }
+        .order-form-input {
+            text-indent: px2rem(20);
+            margin-left: px2rem(10);
+        }
+    }
+}
+
+.menu-list-undisplay {
+    display: none;
+}
+.menu-list-wrapper {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: calc(100% - px2rem(202));
+    background-color: rgba(108, 117, 125, 0.6);
+    top: px2rem(90);
+
+    .menu-list {
+        width: px2rem(550);
+        height: 100%;
+
+        .menu-list-item {
+            box-sizing: border-box;
+            font-size: px2rem(34);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: px2rem(10) px2rem(20);
+
+            .anticon {
+                float: right;
+                margin-top: px2rem(10);
+            }
+        }
+        .menu-list-item-choose {
+            color: #007bff;
+        }
+        .menu-list-item-active {
+            background-color: white;
+        }
+        .menu-list-left {
+            width: 35%;
+            height: 100%;
+            background-color: whitesmoke;
+            float: left;
+            overflow-y: scroll;
+        }
+        .menu-list-right {
+            width: 65%;
+            float: left;
+            background-color: white;
+            height: 100%;
+            overflow-y: scroll;
         }
     }
 }

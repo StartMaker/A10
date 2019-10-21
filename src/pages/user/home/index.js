@@ -28,9 +28,9 @@ class Home extends React.Component {
         return (
             <SeoContainer title="颐嘉餐厅-首页">
                 <Switch>
-                    <Route exact path={`${match.url}/food-menu`} component={FoodMenu}/>
-                    <Route exact path={`${match.url}/order-form`} component={OrderForm}/>
-                    <Redirect from="/admin/home" to={`${match.url}/food-menu`}/>
+                    <Route path={`${match.url}/food-menu`} component={FoodMenu}/>
+                    <Route path={`${match.url}/order-form`} component={OrderForm}/>
+                    <Redirect from="/user/home" to={`${match.url}/food-menu`}/>
                 </Switch>
                 <Footer navItems={this.navItems}/>
             </SeoContainer>
