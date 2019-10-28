@@ -28,7 +28,7 @@ class Login extends Component {
             .then(res => {
                 if (res.code === 0) {
                     const {data} = res;
-                    data.role === 1 && history.push('/user/home');
+                    data.role === 1 && history.push('/admin/home');
                     data.role === 0 && history.push('/user/home');
                     localStorage.setItem('pass-key',data.token);
                     localStorage.setItem('username', form.username);

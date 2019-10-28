@@ -135,7 +135,9 @@ class FoodMenu extends React.Component {
                 </nav>
                 <main className="order-menu-content">
                     <Drawer
-                        sidebar={<Sider dataSource={menu.current} changeStatus={drawerMethods.changeStatus}/>}
+                        sidebar={<Sider
+                            dataSource={menu.current}
+                            changeStatus={drawerMethods.changeStatus}/>}
                         open={drawer.open}
                         position="right">
                         <DayOrder/>

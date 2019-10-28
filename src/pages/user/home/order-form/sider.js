@@ -10,30 +10,48 @@ class Sider extends React.Component {
         this.dtos = {};
         this.state = {
             form: {
-                category: '0'
+                category: '0',
+                params: {
+                    phoneNum: '',
+                    contact: '',
+                    address: ''
+                }
             },
         };
     }
     formMethods = {
+        normalChange: (key) => (value) => {
+            const {form} = this.state;
+            form.params[key] = value;
+            this.setState({form});
+        },
         valueChange: (index, key) => (value) => {
             this.dtos[index][key] = value;
         },
         cancel: () => {
             const {changeStatus} = this.props;
+            const {form} = this.state;
             this.dtos = {};
+            form.params = {
+                phoneNum: '',
+                contact: '',
+                address: ''
+            };
             changeStatus();
+            this.setState({form});
         },
         submit: () => {
-            console.log(this.dtos);
             const dtos  = [];
+            const {form: {params}} = this.state;
             for (let key in this.dtos) {
                 dtos.push(this.dtos[key]);
             }
-            axios.POST('/replenish/insert',{dtos})
+            params.dtos = dtos;
+            axios.POST('/replenish/insert',params)
                 .then(res => {
-                    console.log('ss');
                     if (res.code === 0) {
                         this.formMethods.cancel();
+                        Toast.success('添加订单成功',1);
                     }
                     else {
                         Toast.fail(res.msg);
@@ -55,36 +73,18 @@ class Sider extends React.Component {
                 }
                 else {
                     this.dtos[key] = {
-                        contact: '',
-                        address: '',
                         greensNum: '',
-                        phoneNum: '',
                         unitPrice: '',
+                        greenProductId: dataSource[key].id
                     };
                 }
             }
             return list.map(item => {
                 return (
-                    <form key={item.id} className="order-form">
+                    <Fragment key={item.id}>
                         <div className="order-form-title">
                             <Icon type="icon-meat"/>
                             {item.productName}
-                        </div>
-                        <div className="order-form-item">
-                            <span className="order-form-label">联系人</span>
-                            <Input
-                                onChange={this.formMethods.valueChange(item.id, 'contact')}
-                                className="order-form-input"
-                                type="text"
-                                placeholder="请输入联系人姓名"/>
-                        </div>
-                        <div className="order-form-item">
-                            <span className="order-form-label">地址</span>
-                            <Input
-                                onChange={this.formMethods.valueChange(item.id, 'address')}
-                                className="order-form-input"
-                                type="text"
-                                placeholder="请输入地址"/>
                         </div>
                         <div className="order-form-item">
                             <span className="order-form-label">数量</span>
@@ -95,14 +95,6 @@ class Sider extends React.Component {
                                 placeholder="请输入数量"/>
                         </div>
                         <div className="order-form-item">
-                            <span className="order-form-label">电话</span>
-                            <Input
-                                onChange={this.formMethods.valueChange(item.id, 'phoneNum')}
-                                className="order-form-input"
-                                type="text"
-                                placeholder="请输入电话"/>
-                        </div>
-                        <div className="order-form-item">
                             <span className="order-form-label">单价</span>
                             <Input
                                 onChange={this.formMethods.valueChange(item.id, 'unitPrice')}
@@ -110,7 +102,7 @@ class Sider extends React.Component {
                                 type="number"
                                 placeholder="请输入单价"/>
                         </div>
-                    </form>
+                    </Fragment>
                 )
             });
         }
@@ -118,12 +110,37 @@ class Sider extends React.Component {
 
     render() {
         const {formMethods} = this;
-        const {changeStatus} = this.props;
         return (
             <Fragment>
                 <div className="sider-middle">
                     <div className="sider-middle-title">创建订单</div>
-                    {formMethods.init()}
+                    <form className="order-form">
+                        <div className="order-form-item">
+                            <span className="order-form-label">联系人</span>
+                            <Input
+                                onChange={this.formMethods.normalChange('contact')}
+                                className="order-form-input"
+                                type="text"
+                                placeholder="请输入联系人姓名"/>
+                        </div>
+                        <div className="order-form-item">
+                            <span className="order-form-label">地址</span>
+                            <Input
+                                onChange={this.formMethods.normalChange('address')}
+                                className="order-form-input"
+                                type="text"
+                                placeholder="请输入地址"/>
+                        </div>
+                        <div className="order-form-item">
+                            <span className="order-form-label">电话</span>
+                            <Input
+                                onChange={this.formMethods.normalChange('phoneNum')}
+                                className="order-form-input"
+                                type="text"
+                                placeholder="请输入电话"/>
+                        </div>
+                        {formMethods.init()}
+                    </form>
                 </div>
                 <div className="btn-group">
                     <a className="submit" onClick={formMethods.submit}>提交</a>

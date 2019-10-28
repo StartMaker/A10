@@ -2,8 +2,10 @@ import React, {Fragment} from 'react';
 import Icon from '&icons';
 import SeoContainer from '&components/seo-container';
 import DayMenu from './day-menu';
-import {Drawer} from 'antd-mobile';
+import {Drawer, Toast} from 'antd-mobile';
 import Sider from './sider';
+import moment from 'moment';
+import axios from '&helpers/config/axios';
 import './styles.less';
 
 class FoodMenu extends React.Component {
@@ -22,6 +24,23 @@ class FoodMenu extends React.Component {
             this.setState({drawer});
         }
     };
+    componentDidMount() {
+        const endDate = new Date().getTime();
+        const beginDate = moment.duration(15, 'days').valueOf();
+        axios.GET('/menu/getClickNum',{beginDate, endDate})
+            .then(res => {
+                if (res.code === 0) {
+                    console.log(res);
+                }
+                else {
+                    Toast.fail(res.msg,1);
+                }
+            })
+            .catch(err => {
+                Toast.fail('网络异常',1);
+            });
+    }
+
     render() {
         const {drawer} = this.state;
         const {drawerMethods} = this;
