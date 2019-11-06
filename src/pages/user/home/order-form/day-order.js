@@ -7,17 +7,19 @@ class DayOrder extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            dataSource: [],
-            current: 0
+            dataSource: []
+        };
+        this.page = {
+            pageNum: 1,
+            pageSize: 15
         };
     };
     componentDidMount() {
-        const endDate = moment().valueOf();
-        const date = moment.duration(15, 'days').valueOf();
-        axios.GET('/replenish/getList', {date, endDate})
+        const {page} = this;
+        axios.GET('/replenish/getorders', page)
             .then(res => {
                 if (res.code === 0) {
-                    this.setState({dataSource: res.data});
+                    this.setState({dataSource: res.data.list});
                 }
                 else {
                     Toast.fail(res.msg,1);
@@ -45,12 +47,12 @@ class DayOrder extends React.Component {
             });
         },
         early: () => {
-            let {current} = this.state;
-            const endDate = current === 0
-                ? moment().valueOf()
-                : moment.duration(current + 15, 'days').valueOf();
-            const date = moment.duration(current + 30, 'days').valueOf();
-            axios.GET('/replenish/getList',{date, endDate})
+            if (this.page.pageNum === 1) {
+                Toast.fail('已到第一页');
+                return ;
+            }
+            this.page.pageNum --;
+            axios.GET('/replenish/getorders',this.page)
                 .then(res => {
                     if (res.code === 0) {
                         if (res.data.length === 0) {
@@ -58,8 +60,7 @@ class DayOrder extends React.Component {
                         }
                         else {
                             this.setState({
-                                current: current + 15,
-                                dataSource: res.data
+                                dataSource: res.data.list
                             });
                         }
                     }
@@ -72,25 +73,17 @@ class DayOrder extends React.Component {
                 })
         },
         late: () => {
-            let {current} = this.state;
-            if (current - 15 < 0) {
-                Toast.fail('已到最后一页',1);
-                return ;
-            }
-            const endDate = current === 0
-                ? moment().valueOf()
-                : moment.duration(current - 15, 'days').valueOf();
-            const date = moment.duration(current, 'days').valueOf();
-            axios.GET('/replenish/getList',{date, endDate})
+            this.page.pageNum ++;
+            axios.GET('/replenish/getorders', this.page)
                 .then(res => {
                     if (res.code === 0) {
-                        if (res.data.length === 0) {
+                        if (res.data.list.length === 0) {
                             Toast.fail('已到最后一页');
+                            this.page.pageNum --;
                         }
                         else {
                             this.setState({
-                                current: current - 15,
-                                dataSource: res.data
+                                dataSource: res.data.list
                             });
                         }
                     }

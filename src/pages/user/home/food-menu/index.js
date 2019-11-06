@@ -13,9 +13,13 @@ class FoodMenu extends React.Component {
         super(props);
         this.state = {
             drawer: {
-                open: false
+                open: false,
             }
-        }
+        };
+        this.page = {
+            pageNum: 1,
+            pageSize: 15
+        };
     }
     drawerMethods = {
         changeStatus: () => {
@@ -24,22 +28,6 @@ class FoodMenu extends React.Component {
             this.setState({drawer});
         }
     };
-    componentDidMount() {
-        const endDate = new Date().getTime();
-        const beginDate = moment.duration(15, 'days').valueOf();
-        axios.GET('/menu/getClickNum',{beginDate, endDate})
-            .then(res => {
-                if (res.code === 0) {
-                    console.log(res);
-                }
-                else {
-                    Toast.fail(res.msg,1);
-                }
-            })
-            .catch(err => {
-                Toast.fail('网络异常',1);
-            });
-    }
 
     render() {
         const {drawer} = this.state;

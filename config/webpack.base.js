@@ -10,7 +10,7 @@ module.exports = {
             {
                 test:/\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: 'HappyPack/loader?id=babel'
+                use: 'happypack/loader?id=babel'
             },
             {
                 test: /\.(ts|tsx)?$/,
@@ -36,10 +36,10 @@ module.exports = {
     plugins: [
         new HappyPack({
             id: 'babel',
-            threadPool: HappyPackPool,
-            // cache: true,
-            // threads: 5,
-            loaders: ['babel-loader','astroturf/loader']
+            use: [
+                'babel-loader',
+                'astroturf/loader'
+            ]
         }),
         new ForkTsCheckerWebpackPlugin()
     ]
