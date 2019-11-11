@@ -29,4 +29,4 @@ react ssr
 
 测试客户端代码  非同构
 
-2、server:client:
+2、server:client
